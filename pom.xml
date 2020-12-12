@@ -6,7 +6,9 @@
 
     <modules>
         <module>eureka-server</module>
-        <module>config-server</module>
+        <module>microservice_1</module>
+        <module>microservice_2</module>
+        <module>microservice_3</module>
     </modules>
 
     <parent>
