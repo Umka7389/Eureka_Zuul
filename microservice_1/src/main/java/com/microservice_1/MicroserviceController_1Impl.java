@@ -6,12 +6,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-@Controller
-public class MicroserviceController_1Impl implements MicroserviceController_1{
+@RestController
+public class MicroserviceController_1Impl implements MicroserviceController_1 {
 
 
     @Override
-    @ResponseBody
     @GetMapping("/first")
     public String firstMethodMicroserviceFirst() {
         return new String("This is first method of microservice #1");
@@ -19,7 +18,7 @@ public class MicroserviceController_1Impl implements MicroserviceController_1{
 
     @Override
     @GetMapping("/parameter/{id}")
-    public String secondMethodMicroserviceFirst(@PathVariable String id) {
-        return String.format("This id first method of microservice #%s",id);
+    public String secondMethodMicroserviceFirst(@PathVariable Integer id) {
+        return String.format("This is second method of microservice #%s", id);
     }
 }

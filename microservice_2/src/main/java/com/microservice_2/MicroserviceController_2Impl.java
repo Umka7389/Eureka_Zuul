@@ -33,8 +33,10 @@ public class MicroserviceController_2Impl {
         return "greeting-view";
     }
 
+    @ResponseBody
     @GetMapping("/parameter/{id}")
     public String secondMethodMicroserviceSecond(@PathVariable String id) {
-        return String.format("This id first method of microservice #%s", id);
+        return String.format("This is second method of microservice #%s" +
+                microserviceController2.secondMethodMicroserviceFirst(1), id);
     }
 }

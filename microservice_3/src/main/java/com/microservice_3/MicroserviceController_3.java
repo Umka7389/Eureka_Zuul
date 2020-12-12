@@ -11,7 +11,7 @@ public interface MicroserviceController_3 {
     String firstMethodMicroserviceSecond();
 
     @GetMapping("/parameter/{id}")
-    String secondMethodMicroserviceSecond(@PathVariable(value = "id") String id);
+    String secondMethodMicroserviceSecond(@PathVariable(value = "id") Integer id);
 
 
 }

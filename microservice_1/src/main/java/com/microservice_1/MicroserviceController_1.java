@@ -9,7 +9,7 @@ public interface MicroserviceController_1 {
     String firstMethodMicroserviceFirst();
 
     @GetMapping("/parameter/{id}")
-    String secondMethodMicroserviceFirst(@PathVariable(value = "id") String id);
+    String secondMethodMicroserviceFirst(@PathVariable(value = "id") Integer id);
 
 
 }

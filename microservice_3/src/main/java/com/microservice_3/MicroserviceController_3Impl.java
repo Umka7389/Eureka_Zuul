@@ -27,8 +27,11 @@ public class MicroserviceController_3Impl {
     }
 
 
-    @GetMapping("/parameter/{id}")
-    public String secondMethodMicroserviceThird(@PathVariable String id) {
-        return String.format("This id first method of microservice #%s", id);
+    @GetMapping("/get_parameter/{id}")
+    public String secondMethodMicroserviceThird(@PathVariable String id, Model model) {
+        String s = String.format("This is second method of microservice #%s"
+                + microserviceController3.secondMethodMicroserviceSecond(2), id);
+        model.addAttribute("get_parameter", s);
+        return "greeting-view";
     }
 }
