@@ -21,7 +21,7 @@ public class MicroserviceController_3Impl {
     @GetMapping("/get_first")
     public String firstMethodMicroserviceThird(Model model) {
         String s = "This is first method of microservice #3\n" +
-                microserviceController3.firstMethodMicroserviceSecond();
+                microserviceController3.asd();
         model.addAttribute("firstMethodMicroserviceThird", s);
         return "greeting-view";
     }

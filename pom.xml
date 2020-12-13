@@ -5,10 +5,11 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>eureka-server</module>
+        <module>eureka-service</module>
         <module>microservice_1</module>
         <module>microservice_2</module>
         <module>microservice_3</module>
+        <module>zuul-server</module>
     </modules>
 
     <parent>

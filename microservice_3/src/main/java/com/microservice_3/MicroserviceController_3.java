@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 public interface MicroserviceController_3 {
 
     @GetMapping("/first")
-    String firstMethodMicroserviceSecond();
+    String asd();
 
     @GetMapping("/parameter/{id}")
     String secondMethodMicroserviceSecond(@PathVariable(value = "id") Integer id);
